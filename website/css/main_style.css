@@ -1,0 +1,1681 @@
+/*
+Theme Name:     ITHEME
+Version:        1.0
+Description:    Custom CSS for Demo 1
+*/
+/* 
+	All custom ids and classes used for the theme, starts with "itheme".
+	For demo 1 to demo 8, it uses "itheme".
+	For demo 9, it uses "ithemeD9". 
+	For demo 10, it uses "ithemeD10".
+	For index page, it uses "ithemeIndex".
+	For documentation page, it uses "ithemeDoc".
+*/
+/* TABLE OF CONTENTS
+	1. body
+		1.1 for demo 1 to demo 8
+			1.1.1 #itheme-body
+		1.2 for demo 9
+			1.2.1 #ithemeD9-body
+		1.3 for demo 10
+			1.3.1 #ithemeD10-body
+		1.4 for index
+			1.4.1 #ithemeIndex-body
+	2. headlines
+		2.1 h1, h2, h3, h4, h5, h6
+	3. container
+		3.1 .itheme-container
+	4. row
+		4.1 .itheme-row
+	5. column
+		5.1 .itheme-column
+	6. div
+		6.1 for demo 1 to demo 8
+			6.1.1 .itheme-div-1
+			6.1.2 .itheme-div-2
+			6.1.3 .itheme-div-3
+			6.1.4 .itheme-div-4
+			6.1.5 .itheme-div-5
+			6.1.6 .itheme-div-6
+			6.1.7 .itheme-div-7
+		6.2 for demo 9
+			6.2.1 .ithemeD9-div-1
+			6.2.2 .ithemeD9-div-2
+			6.2.3 .ithemeD9-div-3
+			6.2.4 .ithemeD9-div-4
+			6.2.5 .ithemeD9-div-5
+			6.2.6 .ithemeD9-div-6
+			6.2.7 .ithemeD9-div-7
+		6.3 for demo 10
+			6.3.1 .ithemeD10-div-1
+			6.3.2 .ithemeD10-div-2
+			6.3.3 .ithemeD10-div-3
+			6.3.4 .ithemeD10-div-4
+			6.3.5 .ithemeD10-div-5
+			6.3.6 .ithemeD10-div-6
+			6.3.7 .ithemeD10-div-7
+		6.4 for index
+			6.4.1 .ithemeIndex-div-1
+	7. watermark
+		7.1 for demo 1 to demo 8
+			7.1.1 .itheme-mark
+		7.2 for demo 9
+			7.2.1 .ithemeD9-mark
+		7.3 for demo 10
+			7.3.1 .ithemeD10-mark
+		7.4 for index
+			7.4.1 .ithemeIndex-mark
+	8. input
+		8.1 .itheme-field input
+	9. textarea
+		9.1 .itheme-field textarea
+	10. color
+		10.1 for demo 1 to demo 8
+			10.1.1 .itheme-color-1
+			10.1.2 .itheme-color-2
+		10.1 for demo 9
+			10.1.1 .ithemeD9-color-1
+			10.1.2 .ithemeD9-color-2
+		10.1 for demo 10
+			10.1.1 .ithemeD10-color-1
+			10.1.2 .ithemeD10-color-2
+		10.1 for index
+			10.1.1 .ithemeIndex-color-1
+			10.1.2 .ithemeIndex-color-2
+	11. box
+		11.1 for demo 1 to demo 8
+			11.1.1 .itheme-box-1
+			11.1.2 .itheme-box-2
+			11.1.3 .itheme-box-3
+			11.1.4 .itheme-box-4
+			11.1.5 .itheme-box-5
+			11.1.6 .itheme-box-6
+			11.1.7 .itheme-box-7
+			11.1.8 .itheme-box-8
+		11.1 for demo 9
+			11.1.1 .ithemeD9-box-1
+			11.1.2 .ithemeD9-box-2
+			11.1.3 .ithemeD9-box-3
+			11.1.4 .ithemeD9-box-4
+			11.1.5 .ithemeD9-box-5
+			11.1.6 .ithemeD9-box-6
+			11.1.7 .ithemeD9-box-7
+			11.1.8 .ithemeD9-box-8
+		11.1 for demo 10
+			11.1.1 .ithemeD10-box-1
+			11.1.2 .ithemeD10-box-2
+			11.1.3 .ithemeD10-box-3
+			11.1.4 .ithemeD10-box-4
+			11.1.5 .ithemeD10-box-5
+			11.1.6 .ithemeD10-box-6
+			11.1.7 .ithemeD10-box-7
+			11.1.8 .ithemeD10-box-8
+		11.1 for demo index
+			11.1.1 .ithemeIndex-box-1
+			11.1.2 .ithemeIndex-box-2
+			11.1.3 .ithemeIndex-box-3
+			11.1.4 .ithemeIndex-box-4
+			11.1.5 .ithemeIndex-box-5
+			11.1.6 .ithemeIndex-box-6
+	12. empty box
+		12.1 .itheme-empty-box-1
+		12.2 .itheme-empty-box-2
+	13. horizontal rule
+		13.1 for demo 1 to demo 8
+			13.1.1 .itheme-hr-1
+			13.1.2 .itheme-hr-2
+			13.1.3 .itheme-hr-3
+			13.1.4 .itheme-hr-4
+			13.1.5 .itheme-hr-5
+			13.1.6 .itheme-hr-6
+		13.2 for demo 9
+			13.2.1 .itheme-hr-1
+			13.2.2 .itheme-hr-2
+			13.2.3 .itheme-hr-3
+			13.2.4 .itheme-hr-4
+			13.2.5 .itheme-hr-5
+			13.2.6 .itheme-hr-6
+		13.3 for demo 10
+			13.3.1 .itheme-hr-1
+			13.3.2 .itheme-hr-2
+			13.3.3 .itheme-hr-3
+			13.3.4 .itheme-hr-4
+			13.3.5 .itheme-hr-5
+			13.3.6 .itheme-hr-6
+	14. navigation
+		14.1 for demo 1 to demo 8
+			14.1.1 #itheme-navbar
+			14.1.2 .itheme-navbar.solid
+			14.1.3 .itheme-nav-link
+		14.2 for demo 9
+			14.2.1 #ithemeD9-navbar
+			14.2.2 .ithemeD9-navbar.solid
+			14.2.3 .ithemeD9-nav-link
+		14.3 for demo 10
+			14.3.1 #ithemeD10-navbar
+			14.3.2 .ithemeD10-navbar.solid
+			14.3.3 .ithemeD10-nav-link
+		14.4 for index
+			14.4.1 #ithemeIndex-navbar
+			14.4.2 .ithemeIndex-navbar.solid
+			14.4.3 .ithemeIndex-nav-link
+		14.5 for documentation
+			14.5.1 #ithemeDoc-navbar
+			14.5.2 .ithemeDoc-nav-pills
+			14.5.3 .ithemeDoc-nav-link
+	15. show link
+		15.1 .itheme-show-link
+	16. button
+		16.1 for demo 1 to demo 8
+			16.1.1 .itheme-button-1
+			16.1.2 .itheme-button-2
+			16.1.3 .itheme-button-3
+			16.1.4 .itheme-button-4
+			16.1.5 .itheme-button-5
+		16.2 for demo 9
+			16.2.1 .ithemeD9-button-1
+			16.2.2 .ithemeD9-button-2
+			16.2.3 .ithemeD9-button-3
+			16.2.4 .ithemeD9-button-4
+			16.2.5 .ithemeD9-button-5
+		16.3 for demo 10
+			16.3.1 .ithemeD10-button-1
+			16.3.2 .ithemeD10-button-2
+			16.3.3 .ithemeD10-button-3
+			16.3.4 .ithemeD10-button-4
+			16.3.5 .ithemeD10-button-5
+		16.4 for index
+			16.4.1 .ithemeIndex-button-1
+	17. progress bar
+		17.1 for demo 1 to demo 8
+			17.1.1 .itheme-progress-bar
+			17.1.2 .itheme-progress-bar-label
+			17.1.3 .itheme-progress-bar-1
+			17.1.4 .itheme-progress-bar-2
+			17.1.5 .itheme-progress-bar-3
+			17.1.6 .itheme-progress-bar-4
+			17.1.7 .itheme-progress-bar-5
+		17.2 for demo 9
+			17.2.1 .ithemeD9-progress-bar
+			17.2.2 .ithemeD9-progress-bar-label
+			17.2.3 .ithemeD9-progress-bar-1
+			17.2.4 .ithemeD9-progress-bar-2
+			17.2.5 .ithemeD9-progress-bar-3
+			17.2.6 .ithemeD9-progress-bar-4
+			17.2.7 .ithemeD9-progress-bar-5
+		17.3 for demo 10
+			17.3.1 .ithemeD10-progress-bar
+			17.3.2 .ithemeD10-progress-bar-label
+			17.3.3 .ithemeD10-progress-bar-1
+			17.3.4 .ithemeD10-progress-bar-2
+			17.3.5 .ithemeD10-progress-bar-3
+			17.3.6 .ithemeD10-progress-bar-4
+			17.3.7 .ithemeD10-progress-bar-5
+	18. services
+		18.1 for demo 1 to demo 8
+			18.1.1 .itheme-service-1
+			18.1.2 .itheme-service-2
+			18.1.3 .itheme-service-3
+			18.1.4 .itheme-service-4
+			18.1.5 .itheme-service-5
+		18.2 for demo 9
+			18.2.1 .ithemeD9-service-1
+			18.2.2 .ithemeD9-service-2
+			18.2.3 .ithemeD9-service-3
+			18.2.4 .ithemeD9-service-4
+			18.2.5 .ithemeD9-service-5
+		18.3 for demo 10
+			18.3.1 .ithemeD10-service-1
+			18.3.2 .ithemeD10-service-2
+			18.3.3 .ithemeD10-service-3
+			18.3.4 .ithemeD10-service-4
+			18.3.5 .ithemeD10-service-5
+	19. portfolio
+		19.1 for demo 1 to demo 8
+			19.1.1 .itheme-portfolio-1
+			19.1.2 .itheme-portfolio-2
+			19.1.3 .itheme-portfolio-3
+			19.1.4 .itheme-portfolio-4
+		19.2 for demo 9
+			19.2.1 .ithemeD9-portfolio-1
+			19.2.2 .ithemeD9-portfolio-2
+			19.2.3 .ithemeD9-portfolio-3
+			19.2.4 .ithemeD9-portfolio-4
+		19.3 for demo 10
+			19.3.1 .ithemeD10-portfolio-1
+			19.3.2 .ithemeD10-portfolio-2
+			19.3.3 .ithemeD10-portfolio-3
+			19.3.4 .ithemeD10-portfolio-4
+	20. reviews
+		20.1 for demo 1 to demo 8
+			20.1.1 .itheme-reviews-1
+		20.2 for demo 9
+			20.2.1 .ithemeD9-reviews-1
+		20.3 for demo 10
+			20.3.1 .ithemeD10-reviews-1
+	21. contact
+		21.1 for demo 1 to demo 8
+			21.1.1 .itheme-contact-1
+		21.2 for demo 9
+			21.2.1 .ithemeD9-form-control
+			21.2.1 .ithemeD9-contact-1
+		21.3 for demo 10
+			21.3.1 .ithemeD10-contact-1
+	22. card-columns
+		22.1 .itheme-card-columns
+	23. height of all elements
+		23.1 *
+	24. footer
+		24.1 for demo 1 to demo 8
+			24.1.1 #itheme-footer
+		24.2 for demo 9
+			24.2.1 #ithemeD9-footer
+		24.3 for demo 10
+			24.3.1 #ithemeD10-footer
+		24.4 for index
+			24.4.1 #ithemeIndex-footer
+	25. header images
+		25.1 for demo 3
+			25.1.1 .ithemeD3-image
+		25.2 for demo 4
+			25.1.1 .ithemeD4-image
+		25.3 for demo 5
+			25.1.1 .ithemeD5-image
+	26. videos
+		26.1 for demo 7
+			26.1.1 .ithemeD7-video
+		26.2 for demo 8
+			26.2.1 .ithemeD8-video
+	27. documentation
+		27.1 for documentation
+			27.1.1 .ithemeDoc-scroll
+END OF TABLE OF CONTENTS */
+/* CUSTOM CSS */
+/* DEMO 1 TO DEMO 8 BODY */
+#itheme-body{
+	background-color: #0D1821;
+	color: white;
+	font-size: 16px;
+	height: 100vh;
+	font-family: 'Poppins', sans-serif;
+}
+/* END OF DEMO 1 TO DEMO 8 BODY */
+/* DEMO 9 BODY */
+#ithemeD9-body{
+	background-color: white;
+	color: #757578;
+	font-size: 16px;
+	height: 100vh;
+	font-family: 'Poppins', sans-serif;
+}
+/* END OF DEMO 9 BODY */
+/* DEMO 10 BODY */
+#ithemeD10-body{
+	background-color: black;
+	color: white;
+	font-size: 16px;
+	height: 100vh;
+	font-family: 'Poppins', sans-serif;
+}
+/* END OF DEMO 10 BODY */
+/* DEMO INDEX BODY */
+#ithemeIndex-body{
+	background-color: #1B998B;
+	color: white;
+	font-size: 16px;
+	height: 100vh;
+	font-family: 'Poppins', sans-serif;
+}
+/* END OF DEMO INDEX BODY */
+/* HEADLINES */
+#itheme-body h1, h2, h3, h4, h5, h6{
+	font-family: 'Paytone One', sans-serif;
+}
+#ithemeD9-body h1, h2, h3, h4, h5, h6{
+	font-family: 'Paytone One', sans-serif;
+}
+#ithemeD10-body h1, h2, h3, h4, h5, h6{
+	font-family: 'Paytone One', sans-serif;
+}
+#ithemeIndex-body h1, h2, h3, h4, h5, h6{
+	font-family: 'Paytone One', sans-serif;
+}
+/* HEADLINES */
+/* CONTAINER */
+.itheme-container{
+    margin: 0;
+    padding: 0;
+}
+/* END OF CONTAINER */
+/* ROW */
+.itheme-row{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	z-index: 1;
+}
+/* END OF ROW */
+/* COLUMN */
+.itheme-column{
+	margin: 0;
+	padding: 0;
+}
+/* END OF COLUMN */
+/* DEMO 1 TO DEMO 8 DIV */
+.itheme-div-1{
+	padding-left: 20px;
+	border-left: 20px solid #D64127;
+}
+.itheme-div-2{
+	padding-left: 20px;
+	border-left: 20px solid #D71E5C;
+}
+.itheme-div-3{
+	padding-right: 20px;
+	border-right: 20px solid #460F22;
+}
+.itheme-div-4{
+	padding-left: 20px;
+	border-left: 20px solid #EF8354;
+}
+.itheme-div-5{
+	padding-right: 20px;
+	border-right: 20px solid #4392F1;
+}
+.itheme-div-6{
+	padding-left: 20px;
+	border-left: 20px solid #E55812;
+}
+.itheme-div-7{
+	padding-right: 20px;
+	border-right: 20px solid #DC166C;
+}
+/* END OF DEMO 1 TO DEMO 8 DIV */
+/* DEMO 9 DIV */
+.ithemeD9-div-1{
+	padding-left: 20px;
+	border-left: 20px solid #5FBF83;
+}
+.ithemeD9-div-2{
+	padding-left: 20px;
+	border-left: 20px solid #FED766;
+}
+.ithemeD9-div-3{
+	padding-right: 20px;
+	border-right: 20px solid #009FB7;
+}
+.ithemeD9-div-4{
+	padding-left: 20px;
+	border-left: 20px solid #7CC57E;
+}
+.ithemeD9-div-5{
+	padding-right: 20px;
+	border-right: 20px solid #6A306D;
+}
+.ithemeD9-div-6{
+	padding-left: 20px;
+	border-left: 20px solid #2E9C95;
+}
+.ithemeD9-div-7{
+	padding-right: 20px;
+	border-right: 20px solid #2F4550;
+}
+/* END OF DEMO 9 DIV */
+/* DEMO 10 DIV */
+.ithemeD10-div-1{
+	padding-left: 20px;
+	border-left: 20px solid #013B36;
+}
+.ithemeD10-div-2{
+	padding-left: 20px;
+	border-left: 20px solid #E49625;
+}
+.ithemeD10-div-3{
+	padding-right: 20px;
+	border-right: 20px solid #63326E;
+}
+.ithemeD10-div-4{
+	padding-left: 20px;
+	border-left: 20px solid #8CAB7F;
+}
+.ithemeD10-div-5{
+	padding-right: 20px;
+	border-right: 20px solid #F2F4F3;
+}
+.ithemeD10-div-6{
+	padding-left: 20px;
+	border-left: 20px solid #706D61;
+}
+.ithemeD10-div-7{
+	padding-right: 20px;
+	border-right: 20px solid #1B2432;
+}
+/* END OF DEMO 10 DIV */
+/* INDEX DIV */
+.ithemeIndex-div-1{
+	padding-left: 20px;
+	border-left: 20px solid #2D3047;
+}
+/* END OF INDEX DIV */
+/* DEMO 1 TO DEMO 8 WATERMARK */
+.itheme-mark{
+	position: absolute;
+	opacity: 0.02;
+	font-size: 15vw;
+	font-family: 'Paytone One', sans-serif;
+}
+/* END OF DEMO 1 TO DEMO 8 WATERMARK */
+/* DEMO 9 WATERMARK */
+.ithemeD9-mark{
+	color: #7C616C;
+	position: absolute;
+	opacity: 0.19;
+	font-size: 15vw;
+	font-family: 'Paytone One', sans-serif;
+}
+/* END OF DEMO 9 WATERMARK */
+/* DEMO 10 WATERMARK */
+.ithemeD10-mark{
+	position: absolute;
+	opacity: 0.04;
+	font-size: 15vw;
+	font-family: 'Paytone One', sans-serif;
+}
+/* END OF DEMO 10 WATERMARK */
+/* INDEX WATERMARK */
+.ithemeIndex-mark{
+	color: black;
+	position: absolute;
+	opacity: 0.03;
+	font-size: 15vw;
+	font-family: 'Paytone One', sans-serif;
+}
+/* END OF INDEX WATERMARK */
+/* INPUT */
+.itheme-field input{
+	border: 0;
+	border-radius: 0;
+}
+/* END OF INPUT */
+/* TEXTAREA */
+.itheme-field textarea{
+	border: 0;
+	border-radius: 0;
+}
+/* END OF TEXTAREA */
+/* DEMO 1 TO DEMO 8 COLOR */
+.itheme-color-1{
+    color: #D64127;
+}
+.itheme-color-2{
+    color: #E6D352;
+}
+/* END OF DEMO 1 TO DEMO 8 COLOR */
+/* DEMO 9 COLOR */
+.ithemeD9-color-1{
+    color: #5FBF83;
+}
+.ithemeD9-color-2{
+    color: #7C616C;
+}
+/* END OF DEMO 9 COLOR */
+/* DEMO 10 COLOR */
+.ithemeD10-color-1{
+    color: #013B36;
+}
+.ithemeD10-color-2{
+    color: #E88A24;
+}
+/* END OF DEMO 10 COLOR */
+/* INDEX COLOR */
+.ithemeIndex-color-1{
+    color: #2D3047;
+}
+.ithemeIndex-color-2{
+    color: #F79A72;
+}
+/* END OF INDEX COLOR */
+/* DEMO 1 TO DEMO 8 BOX */
+.itheme-box-1{
+    background-color: #D64127;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+}
+.itheme-box-2{
+	background-color: #E6D352;
+	height: 50vh;
+	margin: 0;
+	padding: 0;
+}
+.itheme-box-3{
+    background-color: #1B998B;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.itheme-box-4{
+    background-color: #A2DADC;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.itheme-box-5{
+    background-color: #BB2026;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.itheme-box-6{
+    background-color: #EF5C5B;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.itheme-box-7{
+    background-color: #70B344;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.itheme-box-8{
+    background-color: #5EAD46;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+/* END OF DEMO 1 TO DEMO 8 BOX */
+/* DEMO 9 BOX */
+.ithemeD9-box-1{
+    background-color: #5FBF83;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+}
+.ithemeD9-box-2{
+    background-color: #7C616C;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+}
+.ithemeD9-box-3{
+    background-color: #F04D4D;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.ithemeD9-box-4{
+    background-color: #DE499A;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.ithemeD9-box-5{
+    background-color: #48435C;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.ithemeD9-box-6{
+    background-color: #A5668B;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.ithemeD9-box-7{
+    background-color: #664147;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.ithemeD9-box-8{
+    background-color: #B9DBD9;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+/* END OF DEMO 9 BOX */
+/* DEMO 10 BOX */
+.ithemeD10-box-1{
+    background-color: #013B36;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+}
+.ithemeD10-box-2{
+    background-color: #E88A24;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+}
+.ithemeD10-box-3{
+    background-color: #042641;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.ithemeD10-box-4{
+    background-color: #474B24;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.ithemeD10-box-5{
+    background-color: #171E49;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.ithemeD10-box-6{
+    background-color: #47141D;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.ithemeD10-box-7{
+    background-color: #E5446E;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.ithemeD10-box-8{
+    background-color: #B76D68;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+/* END OF DEMO 10 BOX */
+/* INDEX BOX */
+.ithemeIndex-box-1{
+    background-color: #2D3047;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.ithemeIndex-box-2{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+    left: 0;
+    right: 0;
+}
+.ithemeIndex-box-1:hover .ithemeIndex-box-3{
+    opacity: 1;
+}
+.ithemeIndex-box-5:hover .ithemeIndex-box-6{
+    opacity: 1;
+}
+.ithemeIndex-box-3{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	transition: 1s ease;
+	background: rgba(137, 201, 125, 1);
+}
+.ithemeIndex-box-4{
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.ithemeIndex-box-5{
+    background-color: #F79A72;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.ithemeIndex-box-6{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	transition: 1s ease;
+	background: rgba(58, 87, 67, 1);
+}
+/* END OF INDEX BOX */
+/* EMPTY BOX */
+.itheme-empty-box-1{
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+}
+.itheme-empty-box-2{
+	height: 50vh;
+	margin: 0;
+	padding: 0;
+}
+/* END OF EMPTY BOX */
+/* DEMO 1 TO DEMO 8 HORIZONTAL RULE */
+.itheme-hr-1{
+	border-top: 10px solid #1B998B;
+	width: 15vw;
+	margin-right: 80%;
+}
+.itheme-hr-2{
+	border-top: 10px solid #A2DADC;
+	width: 15vw;
+	margin-left: 80%;
+}
+.itheme-hr-3{
+	border-top: 10px solid #EF5C5B;
+	width: 15vw;
+	margin-left: 80%;
+}
+.itheme-hr-4{
+	border-top: 10px solid #BB2026;
+	width: 15vw;
+	margin-right: 80%;
+}
+.itheme-hr-5{
+	border-top: 10px solid #70B344;
+	width: 15vw;
+	margin-right: 80%;
+}
+.itheme-hr-6{
+	border-top: 10px solid #5EAD46;
+	width: 15vw;
+	margin-left: 80%;
+}
+/* END OF DEMO 1 TO DEMO 8 HORIZONATAL RULE */
+/* DEMO 9 HORIZONTAL RULE */
+.ithemeD9-hr-1{
+	border-top: 10px solid #F04D4D;
+	width: 15vw;
+	margin-right: 80%;
+}
+.ithemeD9-hr-2{
+	border-top: 10px solid #DE499A;
+	width: 15vw;
+	margin-left: 80%;
+}
+.ithemeD9-hr-3{
+	border-top: 10px solid #A5668B;
+	width: 15vw;
+	margin-left: 80%;
+}
+.ithemeD9-hr-4{
+	border-top: 10px solid #48435C;
+	width: 15vw;
+	margin-right: 80%;
+}
+.ithemeD9-hr-5{
+	border-top: 10px solid #664147;
+	width: 15vw;
+	margin-right: 80%;
+}
+.ithemeD9-hr-6{
+	border-top: 10px solid #B9DBD9;
+	width: 15vw;
+	margin-left: 80%;
+}
+/* END OF DEMO 9 HORIZONATAL RULE */
+/* DEMO 10 HORIZONTAL RULE */
+.ithemeD10-hr-1{
+	border-top: 10px solid #042641;
+	width: 15vw;
+	margin-right: 80%;
+}
+.ithemeD10-hr-2{
+	border-top: 10px solid #474B24;
+	width: 15vw;
+	margin-left: 80%;
+}
+.ithemeD10-hr-3{
+	border-top: 10px solid #47141D;
+	width: 15vw;
+	margin-left: 80%;
+}
+.ithemeD10-hr-4{
+	border-top: 10px solid #171E49;
+	width: 15vw;
+	margin-right: 80%;
+}
+.ithemeD10-hr-5{
+	border-top: 10px solid #E5446E;
+	width: 15vw;
+	margin-right: 80%;
+}
+.ithemeD10-hr-6{
+	border-top: 10px solid #B76D68;
+	width: 15vw;
+	margin-left: 80%;
+}
+/* END OF DEMO 10 HORIZONATAL RULE */
+/* DEMO 1 TO DEMO 8 NAVIGATION */
+#itheme-navbar{
+	background-color: transparent;
+	color: white;
+}
+#itheme-navbar.solid{
+	background-color: #EC9A29;
+	color: white;
+	transition-delay: 0.2s;
+	transition-property: all;
+	transition-timing-function: ease-in-out;
+}
+#itheme-navbar .itheme-nav-link{
+	color: white;
+}
+#itheme-navbar .itheme-nav-link:hover{
+	color: #0D1821;
+}
+/* END OF DEMO 1 TO DEMO 8 NAVIGATION */
+/* DEMO 9 NAVIGATION */
+#ithemeD9-navbar{
+	background-color: transparent;
+	color: white;
+}
+#ithemeD9-navbar.solid{
+	background-color: #A7C4A0;
+	color: #757578;
+	transition-delay: 0.2s;
+	transition-property: all;
+	transition-timing-function: ease-in-out;
+}
+#ithemeD9-navbar .ithemeD9-nav-link{
+	color: white;
+}
+#ithemeD9-navbar .ithemeD9-nav-link:hover{
+	color: #757578;
+}
+/* END OF DEMO 9 NAVIGATION */
+/* DEMO 10 NAVIGATION */
+#ithemeD10-navbar{
+	background-color: transparent;
+	color: white;
+}
+#ithemeD10-navbar.solid{
+	background-color: #634234;
+	color: white;
+	transition-delay: 0.2s;
+	transition-property: all;
+	transition-timing-function: ease-in-out;
+}
+#ithemeD10-navbar .ithemeD10-nav-link{
+	color: white;
+}
+#ithemeD10-navbar .ithemeD10-nav-link:hover{
+	color: #B3B6B7;
+}
+/* END OF DEMO 10 NAVIGATION */
+/* INDEX NAVIGATION */
+#ithemeIndex-navbar{
+	background-color: transparent;
+	color: white;
+}
+#ithemeIndex-navbar.solid{
+	background-color: #5C4B49;
+	color: white;
+	transition-delay: 0.2s;
+	transition-property: all;
+	transition-timing-function: ease-in-out;
+}
+#ithemeIndex-navbar .ithemeIndex-nav-link{
+	color: white;
+}
+#ithemeIndex-navbar .ithemeIndex-nav-link:hover{
+	color: #CFD7C7;
+}
+/* END OF INDEX NAVIGATION */
+/* DOCUMENTATION NAVIGATION */
+#ithemeDoc-navbar{
+	margin: 0;
+	padding: 0;
+}
+#ithemeDoc-nav-pills{
+	background-color: #EC9A29;
+	color: white;
+	width: 100vw;
+	margin: 0;
+	padding: 0;
+	transition-delay: 0.2s;
+	transition-property: all;
+	transition-timing-function: ease-in-out;
+}
+#ithemeDoc-nav-pills .ithemeDoc-nav-link{
+	background-color: #EC9A29;
+	color: white;
+}
+#ithemeDoc-nav-pills .ithemeDoc-nav-link:hover{
+	color: #0D1821;
+}
+#ithemeDoc-nav-pills .ithemeDoc-nav-link.active,#ithemeDoc-nav-pills .show>.ithemeDoc-nav-link{
+	background-color: #0D1821;
+	color: white;
+	border-radius: 0;
+}
+/* END OF DOCUMENTATION NAVIGATION */
+/* LINK SHOW */
+.itheme-show-link{
+    padding-top: 60px;
+    margin-top: -60px;
+}
+/* END OF LINK SHOW */
+/* DEMO 1 TO DEMO 8 BUTTON */
+.itheme-button-1{
+	background-color: #D80032;
+	color: white;
+	border-radius: 0;
+}
+.itheme-button-1:hover{
+	background-color: #A7A2A9;
+	color: white;
+	border-radius: 0;
+}
+.itheme-button-2{
+	background-color: #D64127;
+	color: white;
+	padding-left: 20px;
+	border-radius: 0;
+	border-left: 20px solid #E6D352;
+}
+.itheme-button-2:hover{
+	background-color: #E6D352;
+	color: #D64127;
+	padding-left: 20px;
+	border-radius: 0;
+	border-left: 20px solid #D64127;
+}
+.itheme-button-3{
+	background-color: #D71E5C;
+	color: white;
+	padding-left: 20px;
+	border-radius: 0;
+	border-left: 20px solid #1B998B;
+}
+.itheme-button-3:hover{
+	background-color: #1B998B;
+	color: white;
+	padding-left: 20px;
+	border-radius: 0;
+	border-left: 20px solid #D71E5C;
+}
+.itheme-button-4{
+	color: #1B998B;
+}
+.itheme-button-4:hover{
+	color: white;
+}
+.itheme-button-5{
+	background-color: #DC166C;
+	color: white;
+	padding-left: 20px;
+	border-radius: 0;
+	border-left: 20px solid #5EAD46;
+}
+.itheme-button-5:hover{
+	background-color: #5EAD46;
+	color: white;
+	padding-left: 20px;
+	border-radius: 0;
+	border-left: 20px solid #DC166C;
+}
+/* END OF DEMO 1 TO DEMO 8 BUTTON */
+/* DEMO 9 BUTTON */
+.ithemeD9-button-1{
+	background-color: #D80032;
+	color: white;
+	border-radius: 0;
+}
+.ithemeD9-button-1:hover{
+	background-color: #A7A2A9;
+	color: white;
+	border-radius: 0;
+}
+.ithemeD9-button-2{
+	background-color: #7C616C;
+	color: white;
+	padding-left: 20px;
+	border-radius: 0;
+	border-left: 20px solid #5FBF83;
+}
+.ithemeD9-button-2:hover{
+	background-color: #5FBF83;
+	color: white;
+	padding-left: 20px;
+	border-radius: 0;
+	border-left: 20px solid #7C616C;
+}
+.ithemeD9-button-3{
+	background-color: #FED766;
+	color: #757578;
+	padding-left: 20px;
+	border-radius: 0;
+	border-left: 20px solid #F04D4D;
+}
+.ithemeD9-button-3:hover{
+	background-color: #F04D4D;
+	color: white;
+	padding-left: 20px;
+	border-radius: 0;
+	border-left: 20px solid #FED766;
+}
+.ithemeD9-button-4{
+	color: #F04D4D;
+}
+.ithemeD9-button-4:hover{
+	color: #757578;
+}
+.ithemeD9-button-5{
+	background-color: #2F4550;
+	color: white;
+	padding-left: 20px;
+	border-radius: 0;
+	border-left: 20px solid #B9DBD9;
+}
+.ithemeD9-button-5:hover{
+	background-color: #B9DBD9;
+	color: #757578;
+	padding-left: 20px;
+	border-radius: 0;
+	border-left: 20px solid #2F4550;
+}
+/* END OF DEMO 9 BUTTON */
+/* DEMO 10 BUTTON */
+.ithemeD10-button-1{
+	background-color: #D80032;
+	color: white;
+	border-radius: 0;
+}
+.ithemeD10-button-1:hover{
+	background-color: #A7A2A9;
+	color: white;
+	border-radius: 0;
+}
+.ithemeD10-button-2{
+	background-color: #013B36;
+	color: white;
+	padding-left: 20px;
+	border-radius: 0;
+	border-left: 20px solid #E88A24;
+}
+.ithemeD10-button-2:hover{
+	background-color: #E88A24;
+	color: white;
+	padding-left: 20px;
+	border-radius: 0;
+	border-left: 20px solid #013B36;
+}
+.ithemeD10-button-3{
+	background-color: #E49625;
+	color: black;
+	padding-left: 20px;
+	border-radius: 0;
+	border-left: 20px solid #042641;
+}
+.ithemeD10-button-3:hover{
+	background-color: #042641;
+	color: white;
+	padding-left: 20px;
+	border-radius: 0;
+	border-left: 20px solid #E49625;
+}
+.ithemeD10-button-4{
+	color: #E49625;
+}
+.ithemeD10-button-4:hover{
+	color: white;
+}
+.ithemeD10-button-5{
+	background-color: #1B2432;
+	color: white;
+	padding-left: 20px;
+	border-radius: 0;
+	border-left: 20px solid #B76D68;
+}
+.ithemeD10-button-5:hover{
+	background-color: #B76D68;
+	color: white;
+	padding-left: 20px;
+	border-radius: 0;
+	border-left: 20px solid #1B2432;
+}
+/* END OF DEMO 10 BUTTON */
+/* INDEX BUTTON */
+.ithemeIndex-button-1{
+	background-color: #2D3047;
+	color: white;
+	padding-left: 20px;
+	border-radius: 0;
+	border-left: 20px solid #F79A72;
+}
+.ithemeIndex-button-1:hover{
+	background-color: #F79A72;
+	color: #2D3047;
+	padding-left: 20px;
+	border-radius: 0;
+	border-left: 20px solid #2D3047;
+}
+/* END OF INDEX BUTTON */
+/* DEMO 1 TO DEMO 8 PROGRESS BAR */
+.itheme-progress-bar{
+	height: 5vh;
+	margin-left: 10px;
+	margin-bottom: 30px;
+	border-radius: 0;
+	background-color: #A2DADC;
+	direction: rtl;
+}
+.itheme-progress-bar-label{
+	float: right;
+	margin-left: 10px;
+	width: 10vw;
+}
+.itheme-progress-bar-1{
+	width: 90%;
+	text-align: left;
+	padding-left: 10px;
+	border-radius: 0;
+	background-color: #460F22;
+}
+.itheme-progress-bar-2{
+	width: 80%;
+	text-align: left;
+	padding-left: 10px;
+	border-radius: 0;
+	background-color: #460F22;
+}
+.itheme-progress-bar-3{
+	width: 70%;
+	text-align: left;
+	padding-left: 10px;
+	border-radius: 0;
+	background-color: #460F22;
+}
+.itheme-progress-bar-4{
+	width: 90%;
+	text-align: left;
+	padding-left: 10px;
+	border-radius: 0;
+	background-color: #460F22;
+}
+.itheme-progress-bar-5{
+	width: 80%;
+	text-align: left;
+	padding-left: 10px;
+	border-radius: 0;
+	background-color: #460F22;
+}
+/* END OF DEMO 1 TO DEMO 8 PROGRESS BAR */
+/* DEMO 9 PROGRESS BAR */
+.ithemeD9-progress-bar{
+	height: 5vh;
+	margin-left: 10px;
+	margin-bottom: 30px;
+	border-radius: 0;
+	background-color: #DE499A;
+	direction: rtl;
+}
+.ithemeD9-progress-bar-label{
+	float: right;
+	margin-left: 10px;
+	width: 10vw;
+}
+.ithemeD9-progress-bar-1{
+	width: 90%;
+	text-align: left;
+	padding-left: 10px;
+	border-radius: 0;
+	background-color: #009FB7;
+}
+.ithemeD9-progress-bar-2{
+	width: 80%;
+	text-align: left;
+	padding-left: 10px;
+	border-radius: 0;
+	background-color: #009FB7;
+}
+.ithemeD9-progress-bar-3{
+	width: 70%;
+	text-align: left;
+	padding-left: 10px;
+	border-radius: 0;
+	background-color: #009FB7;
+}
+.ithemeD9-progress-bar-4{
+	width: 90%;
+	text-align: left;
+	padding-left: 10px;
+	border-radius: 0;
+	background-color: #009FB7;
+}
+.ithemeD9-progress-bar-5{
+	width: 80%;
+	text-align: left;
+	padding-left: 10px;
+	border-radius: 0;
+	background-color: #009FB7;
+}
+/* END OF DEMO 9 PROGRESS BAR */
+/* DEMO 10 PROGRESS BAR */
+.ithemeD10-progress-bar{
+	height: 5vh;
+	margin-left: 10px;
+	margin-bottom: 30px;
+	border-radius: 0;
+	background-color: #474B24;
+	direction: rtl;
+}
+.ithemeD10-progress-bar-label{
+	float: right;
+	margin-left: 10px;
+	width: 10vw;
+}
+.ithemeD10-progress-bar-1{
+	width: 90%;
+	text-align: left;
+	padding-left: 10px;
+	border-radius: 0;
+	background-color: #63326E;
+}
+.ithemeD10-progress-bar-2{
+	width: 80%;
+	text-align: left;
+	padding-left: 10px;
+	border-radius: 0;
+	background-color: #63326E;
+}
+.ithemeD10-progress-bar-3{
+	width: 70%;
+	text-align: left;
+	padding-left: 10px;
+	border-radius: 0;
+	background-color: #63326E;
+}
+.ithemeD10-progress-bar-4{
+	width: 90%;
+	text-align: left;
+	padding-left: 10px;
+	border-radius: 0;
+	background-color: #63326E;
+}
+.ithemeD10-progress-bar-5{
+	width: 80%;
+	text-align: left;
+	padding-left: 10px;
+	border-radius: 0;
+	background-color: #63326E;
+}
+/* END OF DEMO 10 PROGRESS BAR */
+/* DEMO 1 TO DEMO 8 SERVICES */
+.itheme-service-1{
+	background-color: #BB2026;
+	height: 50vh;
+}
+.itheme-service-1:hover{
+	background-color: #1F7A8C;
+}
+.itheme-service-2{
+	background-color: #EE2F3B;
+	height: 60vh;
+}
+.itheme-service-2:hover{
+	background-color: #17BEBB;
+}
+.itheme-service-3{
+	background-color: #F04E43;
+	height: 70vh;
+}
+.itheme-service-3:hover{
+	background-color: #9BC53D;
+}
+.itheme-service-4{
+	background-color: #EE2F3B;
+	height: 60vh;
+}
+.itheme-service-4:hover{
+	background-color: #17BEBB;
+}
+.itheme-service-5{
+	background-color: #BB2026;
+	height: 50vh;
+}
+.itheme-service-5:hover{
+	background-color: #1F7A8C;
+}
+/* END OF DEMO 1 TO DEMO 8 SERVICES */
+/* DEMO 9 SERVICES */
+.ithemeD9-service-1{
+	background-color: #48435C;
+	color: white;
+	height: 50vh;
+}
+.ithemeD9-service-1:hover{
+	background-color: #464E47;
+	color: white;
+}
+.ithemeD9-service-2{
+	background-color: #5B5766;
+	color: white;
+	height: 60vh;
+}
+.ithemeD9-service-2:hover{
+	background-color: #568259;
+	color: white;
+}
+.ithemeD9-service-3{
+	background-color: #7CC57E;
+	color: white;
+	height: 70vh;
+}
+.ithemeD9-service-3:hover{
+	background-color: #68C3D4;
+}
+.ithemeD9-service-4{
+	background-color: #5B5766;
+	color: white;
+	height: 60vh;
+}
+.ithemeD9-service-4:hover{
+	background-color: #568259;
+	color: white;
+}
+.ithemeD9-service-5{
+	background-color: #48435C;
+	color: white;
+	height: 50vh;
+}
+.ithemeD9-service-5:hover{
+	background-color: #464E47;
+	color: white;
+}
+/* END OF DEMO 9 SERVICES */
+/* DEMO 10 SERVICES */
+.ithemeD10-service-1{
+	background-color: #171E49;
+	height: 50vh;
+}
+.ithemeD10-service-1:hover{
+	background-color: #9D6381;
+}
+.ithemeD10-service-2{
+	background-color: #0F4749;
+	height: 60vh;
+}
+.ithemeD10-service-2:hover{
+	background-color: #264027;
+}
+.ithemeD10-service-3{
+	background-color: #8DAB7F;
+	height: 70vh;
+}
+.ithemeD10-service-3:hover{
+	background-color: #E35A25;
+}
+.ithemeD10-service-4{
+	background-color: #0F4749;
+	height: 60vh;
+}
+.ithemeD10-service-4:hover{
+	background-color: #264027;
+}
+.ithemeD10-service-5{
+	background-color: #171E49;
+	height: 50vh;
+}
+.ithemeD10-service-5:hover{
+	background-color: #9D6381;
+}
+/* END OF DEMO 1 TO DEMO 8 SERVICES */
+/* DEMO 1 TO DEMO 8 PORTFOLIO */
+.itheme-portfolio-1{
+	position: relative;
+}
+.itheme-portfolio-2{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(239, 92, 91, 0.75);
+}
+.itheme-portfolio-1:hover .itheme-portfolio-3{
+    opacity: 1;
+}
+.itheme-portfolio-3{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	transition: 1s ease;
+	background: rgba(88, 140, 201, 0.75);
+}
+.itheme-portfolio-4{
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+/* END OF DEMO 1 TO DEMO 8 PORTFOLIO */
+/* DEMO 9 PORTFOLIO */
+.ithemeD9-portfolio-1{
+	position: relative;
+}
+.ithemeD9-portfolio-2{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(165, 102, 139, 0.75);
+}
+.ithemeD9-portfolio-1:hover .ithemeD9-portfolio-3{
+    opacity: 1;
+}
+.ithemeD9-portfolio-3{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	transition: 1s ease;
+	background: rgba(106, 48, 109, 0.75);
+}
+.ithemeD9-portfolio-4{
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+/* END OF DEMO 9 PORTFOLIO */
+/* DEMO 10 PORTFOLIO */
+.ithemeD10-portfolio-1{
+	position: relative;
+}
+.ithemeD10-portfolio-2{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(71, 20, 29, 0.75);
+}
+.ithemeD10-portfolio-1:hover .ithemeD10-portfolio-3{
+    opacity: 1;
+}
+.ithemeD10-portfolio-3{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	transition: 1s ease;
+	background: rgba(242, 244, 243, 0.5);
+}
+.ithemeD10-portfolio-4{
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+/* END OF DEMO 10 PORTFOLIO */
+/* DEMO 1 TO DEMO 8 REVIEWS */
+.itheme-reviews-1{
+	color: #E55812;
+}
+.itheme-reviews-1:hover{
+	color: #70B344;
+}
+/* END OF DEMO 1 TO DEMO 8 REVIEWS */
+/* DEMO 9 REVIEWS */
+.ithemeD9-reviews-1{
+	color: #2E9C95;
+}
+.ithemeD9-reviews-1:hover{
+	color: #664147;
+}
+/* END OF DEMO 9 REVIEWS */
+/* DEMO 10 REVIEWS */
+.ithemeD10-reviews-1{
+	color: #706D61;
+}
+.ithemeD10-reviews-1:hover{
+	color: #E5446E;
+}
+/* END OF DEMO 10 REVIEWS */
+/* DEMO 1 TO DEMO 8 CONTACT */
+.itheme-contact-1{
+	color: #5EAD46;
+}
+.itheme-contact-1:hover{
+	color: #DC166C;
+}
+/* END OF DEMO 1 TO DEMO 8 CONTACT */
+/* DEMO 9 CONTACT */
+.ithemeD9-form-control{
+	background-color: #B9DBD9;
+}
+.ithemeD9-contact-1{
+	color: #B9DBD9;
+}
+.ithemeD9-contact-1:hover{
+	color: #2F4550;
+}
+/* END OF DEMO 9 CONTACT */
+/* DEMO 10 CONTACT */
+.ithemeD10-contact-1{
+	color: #B76D68;
+}
+.ithemeD10-contact-1:hover{
+	color: #1B2432;
+}
+/* END OF DEMO 10 CONTACT */
+/* CARD COLUMNS */
+@media (max-width: 576px){
+    .itheme-card-columns{
+        column-count: 1;
+        column-gap: 0;
+    }
+}
+@media (min-width: 576px){
+    .itheme-card-columns{
+        column-count: 1;
+        column-gap: 0;
+    }
+}
+@media (min-width: 768px){
+    .itheme-card-columns{
+        column-count: 2;
+        column-gap: 0;
+    }
+}
+@media (min-width: 992px){
+    .itheme-card-columns{
+        column-count: 2;
+        column-gap: 0;
+    }
+}
+@media (min-width: 1200px){
+    .itheme-card-columns{
+        column-count: 4;
+        column-gap: 0;
+    }
+}
+/* END OF CARD COLUMNS */
+/* HEIGHT OF ALL ELEMENTS */
+*{
+    min-height: 0.01px;
+}
+/* END OF HEIGHT OF ALL ELEMENTS */
+/* DEMO 1 TO DEMO 8 FOOTER */
+#itheme-footer{
+	background-color: #D6CE26;
+	color: #0D1821;
+}
+/* END OF DEMO 1 TO DEMO 8 FOOTER */
+/* DEMO 9 FOOTER */
+#ithemeD9-footer{
+	background-color: #6E7271;
+	color: white;
+}
+/* END OF DEMO 9 FOOTER */
+/* DEMO 10 FOOTER */
+#ithemeD10-footer{
+	background-color: #B1D89E;
+	color: black;
+}
+/* END OF DEMO 10 FOOTER */
+/* INDEX FOOTER */
+#ithemeIndex-footer{
+	background-color: #0B2027;
+	color: white;
+}
+/* END OF INDEX FOOTER */
+/* DEMO 3 HEADER IMAGE */
+.ithemeD3-image{
+	height: 100vh;
+	opacity: 0.5;
+}
+/* END OF DEMO 3 HEADER IMAGE */
+/* DEMO 4 HEADER IMAGE */
+.ithemeD4-image{
+	height: 100vh;
+	opacity: 0.07;
+}
+/* END OF DEMO 4 HEADER IMAGE */
+/* DEMO 5 HEADER IMAGE */
+.ithemeD5-image{
+	height: 100vh;
+	opacity: 0.07;
+}
+/* END OF DEMO 5 HEADER IMAGE */
+/* DEMO 7 VIDEO */
+.ithemeD7-video{
+	height: 100vh;
+}
+/* END OF DEMO 7 VIDEO */
+/* DEMO 8 VIDEO */
+.ithemeD8-video{
+	height: 100vh;
+}
+/* END OF DEMO 8 VIDEO */
+/* DOCUMENTATION */
+.ithemeDoc-scroll{
+	position: relative;
+	height: 100vh;
+	overflow-y: scroll;
+}
+#itheme-body pre{
+	color: gray;
+}
+/* END OF DOCUMENTATION */
+/* END OF CUSTOM CSS */
