@@ -294,7 +294,7 @@ END OF TABLE OF CONTENTS */
 /* DEMO 1 TO DEMO 8 BODY */
 #itheme-body{
 	background-color: #0D1821;
-	color: white;
+	color: #F3F3F3;
 	font-size: 16px;
 	height: 100vh;
 	font-family: 'Poppins', sans-serif;
@@ -320,7 +320,7 @@ END OF TABLE OF CONTENTS */
 /* END OF DEMO 10 BODY */
 /* DEMO INDEX BODY */
 #ithemeIndex-body{
-	background-color: #1B998B;
+	background-color: #001A23;
 	color: white;
 	font-size: 16px;
 	height: 100vh;
@@ -454,7 +454,7 @@ END OF TABLE OF CONTENTS */
 /* INDEX DIV */
 .ithemeIndex-div-1{
 	padding-left: 20px;
-	border-left: 20px solid #2D3047;
+	border-left: 20px solid #AFC2D5;
 }
 /* END OF INDEX DIV */
 /* DEMO 1 TO DEMO 8 WATERMARK */
@@ -484,7 +484,7 @@ END OF TABLE OF CONTENTS */
 /* END OF DEMO 10 WATERMARK */
 /* INDEX WATERMARK */
 .ithemeIndex-mark{
-	color: black;
+	color: white;
 	position: absolute;
 	opacity: 0.03;
 	font-size: 15vw;
@@ -529,10 +529,10 @@ END OF TABLE OF CONTENTS */
 /* END OF DEMO 10 COLOR */
 /* INDEX COLOR */
 .ithemeIndex-color-1{
-    color: #2D3047;
+    color: #AFC2D5;
 }
 .ithemeIndex-color-2{
-    color: #F79A72;
+    color: #B3EFB2;
 }
 /* END OF INDEX COLOR */
 /* DEMO 1 TO DEMO 8 BOX */
@@ -549,7 +549,7 @@ END OF TABLE OF CONTENTS */
 	padding: 0;
 }
 .itheme-box-3{
-    background-color: #1B998B;
+    background-color: #BBB891;
     height: 100vh;
     margin: 0;
     padding: 0;
@@ -687,7 +687,7 @@ END OF TABLE OF CONTENTS */
 /* END OF DEMO 10 BOX */
 /* INDEX BOX */
 .ithemeIndex-box-1{
-    background-color: #2D3047;
+    background-color: #AFC2D5;
     height: 50vh;
     margin: 0;
     padding: 0;
@@ -714,10 +714,10 @@ END OF TABLE OF CONTENTS */
 	right: 0;
 	opacity: 0;
 	transition: 1s ease;
-	background: rgba(137, 201, 125, 1);
+	background: rgba(175, 194, 213, 1);
 }
 .ithemeIndex-box-4{
-	color: white;
+	color: black;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -725,7 +725,7 @@ END OF TABLE OF CONTENTS */
 	text-align: center;
 }
 .ithemeIndex-box-5{
-    background-color: #F79A72;
+    background-color: #B3EFB2;
     height: 50vh;
     margin: 0;
     padding: 0;
@@ -739,7 +739,7 @@ END OF TABLE OF CONTENTS */
 	right: 0;
 	opacity: 0;
 	transition: 1s ease;
-	background: rgba(58, 87, 67, 1);
+	background: rgba(179, 239, 178, 1);
 }
 /* END OF INDEX BOX */
 /* EMPTY BOX */
@@ -756,7 +756,7 @@ END OF TABLE OF CONTENTS */
 /* END OF EMPTY BOX */
 /* DEMO 1 TO DEMO 8 HORIZONTAL RULE */
 .itheme-hr-1{
-	border-top: 10px solid #1B998B;
+	border-top: 10px solid #BBB891;
 	width: 15vw;
 	margin-right: 80%;
 }
@@ -853,17 +853,17 @@ END OF TABLE OF CONTENTS */
 /* DEMO 1 TO DEMO 8 NAVIGATION */
 #itheme-navbar{
 	background-color: transparent;
-	color: white;
+	color: #F3F3F3;
 }
 #itheme-navbar.solid{
 	background-color: #EC9A29;
-	color: white;
+	color: black;
 	transition-delay: 0.2s;
 	transition-property: all;
 	transition-timing-function: ease-in-out;
 }
 #itheme-navbar .itheme-nav-link{
-	color: white;
+	color: black;
 }
 #itheme-navbar .itheme-nav-link:hover{
 	color: #0D1821;
@@ -913,7 +913,7 @@ END OF TABLE OF CONTENTS */
 	color: white;
 }
 #ithemeIndex-navbar.solid{
-	background-color: #5C4B49;
+	background-color: #1C2321;
 	color: white;
 	transition-delay: 0.2s;
 	transition-property: all;
@@ -990,17 +990,17 @@ END OF TABLE OF CONTENTS */
 	color: white;
 	padding-left: 20px;
 	border-radius: 0;
-	border-left: 20px solid #1B998B;
+	border-left: 20px solid #BBB891;
 }
 .itheme-button-3:hover{
-	background-color: #1B998B;
-	color: white;
+	background-color: #BBB891;
+	color: #0D1821;
 	padding-left: 20px;
 	border-radius: 0;
 	border-left: 20px solid #D71E5C;
 }
 .itheme-button-4{
-	color: #1B998B;
+	color: #BBB891;
 }
 .itheme-button-4:hover{
 	color: white;
@@ -1142,18 +1142,18 @@ END OF TABLE OF CONTENTS */
 /* END OF DEMO 10 BUTTON */
 /* INDEX BUTTON */
 .ithemeIndex-button-1{
-	background-color: #2D3047;
-	color: white;
+	background-color: #AFC2D5;
+	color: black;
 	padding-left: 20px;
 	border-radius: 0;
-	border-left: 20px solid #F79A72;
+	border-left: 20px solid #B3EFB2;
 }
 .ithemeIndex-button-1:hover{
-	background-color: #F79A72;
-	color: #2D3047;
+	background-color: #B3EFB2;
+	color: black;
 	padding-left: 20px;
 	border-radius: 0;
-	border-left: 20px solid #2D3047;
+	border-left: 20px solid #AFC2D5;
 }
 /* END OF INDEX BUTTON */
 /* DEMO 1 TO DEMO 8 PROGRESS BAR */
@@ -1636,7 +1636,7 @@ END OF TABLE OF CONTENTS */
 /* END OF DEMO 10 FOOTER */
 /* INDEX FOOTER */
 #ithemeIndex-footer{
-	background-color: #0B2027;
+	background-color: #32292F;
 	color: white;
 }
 /* END OF INDEX FOOTER */
