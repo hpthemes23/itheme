@@ -364,7 +364,7 @@ END OF TABLE OF CONTENTS */
 /* DEMO 1 TO DEMO 8 DIV */
 .itheme-div-1{
 	padding-left: 20px;
-	border-left: 20px solid #D64127;
+	border-left: 20px solid #2DD881;
 }
 .itheme-div-2{
 	padding-left: 20px;
@@ -507,7 +507,7 @@ END OF TABLE OF CONTENTS */
 /* END OF TEXTAREA */
 /* DEMO 1 TO DEMO 8 COLOR */
 .itheme-color-1{
-    color: #D64127;
+    color: #2DD881;
 }
 .itheme-color-2{
     color: #E6D352;
@@ -539,7 +539,7 @@ END OF TABLE OF CONTENTS */
 /* END OF INDEX COLOR */
 /* DEMO 1 TO DEMO 8 BOX */
 .itheme-box-1{
-    background-color: #D64127;
+    background-color: #2DD881;
     height: 50vh;
     margin: 0;
     padding: 0;
@@ -942,7 +942,7 @@ END OF TABLE OF CONTENTS */
 }
 #ithemeDoc-nav-pills{
 	background-color: #EC9A29;
-	color: white;
+	color: black;
 	width: 100vw;
 	margin: 0;
 	padding: 0;
@@ -952,7 +952,7 @@ END OF TABLE OF CONTENTS */
 }
 #ithemeDoc-nav-pills .ithemeDoc-nav-link{
 	background-color: #EC9A29;
-	color: white;
+	color: black;
 }
 #ithemeDoc-nav-pills .ithemeDoc-nav-link:hover{
 	color: #0D1821;
@@ -987,11 +987,11 @@ END OF TABLE OF CONTENTS */
 	border-bottom: 0;
 	border-right: 0;
 	border-radius: 0;
-	border-left: 20px solid #D3F3EE;
+	border-left: 20px solid #5E503F;
 }
 .itheme-button-2:hover{
-	background-color: #D3F3EE;
-	color: black;
+	background-color: #5E503F;
+	color: white;
 	border-top: 0;
 	border-bottom: 0;
 	border-right: 0;
@@ -999,7 +999,7 @@ END OF TABLE OF CONTENTS */
 	border-left: 20px solid #B3001B;
 }
 .itheme-button-3{
-	background-color: #D71E5C;
+	background-color: #52528C;
 	color: white;
 	border-top: 0;
 	border-bottom: 0;
@@ -1014,7 +1014,7 @@ END OF TABLE OF CONTENTS */
 	border-bottom: 0;
 	border-right: 0;
 	border-radius: 0;
-	border-left: 20px solid #D71E5C;
+	border-left: 20px solid #52528C;
 }
 .itheme-button-4{
 	color: #BBB891;
@@ -1060,11 +1060,11 @@ END OF TABLE OF CONTENTS */
 	border-bottom: 0;
 	border-right: 0;
 	border-radius: 0;
-	border-left: 20px solid #BCD8C1;
+	border-left: 20px solid #364652;
 }
 .ithemeD9-button-2:hover{
-	background-color: #BCD8C1;
-	color: black;
+	background-color: #364652;
+	color: white;
 	border-top: 0;
 	border-bottom: 0;
 	border-right: 0;
@@ -1078,11 +1078,11 @@ END OF TABLE OF CONTENTS */
 	border-bottom: 0;
 	border-right: 0;
 	border-radius: 0;
-	border-left: 20px solid #DFF3E4;
+	border-left: 20px solid #3D5A80;
 }
 .ithemeD9-button-3:hover{
-	background-color: #DFF3E4;
-	color: black;
+	background-color: #3D5A80;
+	color: white;
 	border-top: 0;
 	border-bottom: 0;
 	border-right: 0;
@@ -1097,22 +1097,22 @@ END OF TABLE OF CONTENTS */
 	font-size: 21px;
 }
 .ithemeD9-button-5{
-	background-color: #08415C;
+	background-color: #46237A;
 	color: white;
 	border-top: 0;
 	border-bottom: 0;
 	border-right: 0;
 	border-radius: 0;
-	border-left: 20px solid #E0EEC6;
+	border-left: 20px solid #773344;
 }
 .ithemeD9-button-5:hover{
-	background-color: #E0EEC6;
-	color: black;
+	background-color: #773344;
+	color: white;
 	border-top: 0;
 	border-bottom: 0;
 	border-right: 0;
 	border-radius: 0;
-	border-left: 20px solid #08415C;
+	border-left: 20px solid #46237A;
 }
 /* END OF DEMO 9 BUTTON */
 /* DEMO 10 BUTTON */
@@ -1133,10 +1133,10 @@ END OF TABLE OF CONTENTS */
 	border-bottom: 0;
 	border-right: 0;
 	border-radius: 0;
-	border-left: 20px solid #F4E3B2;
+	border-left: 20px solid #FFC145;
 }
 .ithemeD10-button-2:hover{
-	background-color: #F4E3B2;
+	background-color: #FFC145;
 	color: black;
 	border-top: 0;
 	border-bottom: 0;
@@ -1151,11 +1151,11 @@ END OF TABLE OF CONTENTS */
 	border-bottom: 0;
 	border-right: 0;
 	border-radius: 0;
-	border-left: 20px solid #FAFAFF;
+	border-left: 20px solid #00635D;
 }
 .ithemeD10-button-3:hover{
-	background-color: #FAFAFF;
-	color: black;
+	background-color: #00635D;
+	color: white;
 	border-top: 0;
 	border-bottom: 0;
 	border-right: 0;
@@ -1176,10 +1176,10 @@ END OF TABLE OF CONTENTS */
 	border-bottom: 0;
 	border-right: 0;
 	border-radius: 0;
-	border-left: 20px solid #A5FFD6;
+	border-left: 20px solid #63C7B2;
 }
 .ithemeD10-button-5:hover{
-	background-color: #A5FFD6;
+	background-color: #63C7B2;
 	color: black;
 	border-top: 0;
 	border-bottom: 0;
@@ -1727,7 +1727,7 @@ END OF TABLE OF CONTENTS */
 	overflow-y: scroll;
 }
 #itheme-body pre{
-	color: gray;
+	color: #C0C0C0;
 }
 /* END OF DOCUMENTATION */
 /* END OF CUSTOM CSS */
