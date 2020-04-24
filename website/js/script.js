@@ -133,17 +133,23 @@ $(document).ready(function(){
 	    	$('#itheme-navbar, #ithemeD9-navbar, #ithemeD10-navbar, #ithemeIndex-navbar').show();
 	    }
 	});
-	/* SMOOTH SCROLL */
-	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-	    anchor.addEventListener('click', function (e) {
-	        e.preventDefault();
-	        document.querySelector(this.getAttribute('href')).scrollIntoView({
-	            behavior: 'smooth'
-	        });
-	    });
-	});
-	/* END OF SMOOTH SCROLL */
 });
+/* SMOOTH SCROLL */
+	$(document).ready(function(){
+		// Add smooth scrolling to all links
+		$("a").on('click', function(event) {
+			if (this.hash !== "") {
+			  event.preventDefault();
+			  var hash = this.hash;
+			  $('html, body').animate({
+			    scrollTop: $(hash).offset().top
+			  }, 800, function(){
+			    window.location.hash = hash;
+			  });
+			}
+		});
+	});
+/* END OF SMOOTH SCROLL */
 /* END OF NAVIGATION BAR */
 /* DEMO 6 AND DEMO 8 TYPED TEXT */
 $(document).ready(function(){
