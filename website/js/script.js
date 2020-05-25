@@ -26,9 +26,6 @@ Description:    Custom JS for the theme
 			3.3.1 #ithemeD10-navbar
 		3.4 for index
 			3.4.1 #ithemeIndex-navbar
-	4. typed
-		4.1 for demo 6 and demo 8
-			4.1.1 #itheme-typed
 END OF TABLE OF CONTENTS */
 /* CUSTOM JS */
 /* OWL CAROUSEL */
@@ -151,16 +148,4 @@ $(document).ready(function(){
 	});
 /* END OF SMOOTH SCROLL */
 /* END OF NAVIGATION BAR */
-/* DEMO 6 AND DEMO 8 TYPED TEXT */
-$(document).ready(function(){
-	var typed1 = new Typed('#itheme-typed', {
-		strings: ['WEB', 'DEVELOPER'],
-		typeSpeed: 300,
-		backSpeed: 0,
-		fadeOut: true,
-		smartBackspace: true,
-		loop: true
-	});
-});
-/* END OF DEMO 6 AND DEMO 8 TYPED TEXT */
 /* END OF CUSTOM JS */
